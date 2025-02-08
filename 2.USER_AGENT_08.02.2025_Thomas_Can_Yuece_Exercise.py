@@ -36,7 +36,7 @@ print("Turkish Text Sample:", repr(text_tr[:500]))  # Shows hidden characters
 def analyze_word_lengths(doc):
     lengths = {}
     for token in doc:
-        # Token muss kein Satzzeichen, kein Leerzeichen, keine Zahl sein und nur Buchstaben enthalten
+        # Token must not be a punctuation, space or number and only contain letters
          if token.is_alpha:
             length = len(token.text)
             if length in lengths:
@@ -45,14 +45,14 @@ def analyze_word_lengths(doc):
                 lengths[length] = 1
     return lengths
 
-# Analysiere Wortlängen
+# Analyse the word lengths
 lengths_en = analyze_word_lengths(doc_en)
 lengths_tr = analyze_word_lengths(doc_tr)
 
 print("English Word Lengths: ", lengths_en)
 print("Turkish Word Lengths: ", lengths_tr)
 
-# Sortieren
+# Sorting them from the shortest until the largest word length:
 sorted_lengths_en = dict(sorted(lengths_en.items()))
 sorted_lengths_tr = dict(sorted(lengths_tr.items()))
 
