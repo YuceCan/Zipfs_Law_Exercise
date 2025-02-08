@@ -25,7 +25,7 @@ doc_tr = nlp_tr(text_tr)
 def analyze_word_lengths(doc):
     lengths = {}
     for token in doc:
-        # Token muss kein Satzzeichen, kein Leerzeichen, keine Zahl sein und nur Buchstaben enthalten
+        # Token must not be a punctuation, space or number and only contain letters
          if token.is_alpha:
             length = len(token.text)
             if length in lengths:
