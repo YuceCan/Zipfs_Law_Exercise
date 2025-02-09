@@ -7,7 +7,7 @@ def load_text_from_file(filename):
 text_en = load_text_from_file("english_text.txt")  
 text_tr = load_text_from_file("turkish_text.txt")
 
-#Import the following libraries for NLP-related tasks
+#Import the following library for NLP-related tasks
 import spacy
 
 # Load English and Turkish language models in order to initialise NLP for processing texts of each language
