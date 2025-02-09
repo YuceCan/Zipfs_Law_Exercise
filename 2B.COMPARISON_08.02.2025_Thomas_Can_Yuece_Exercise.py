@@ -3,11 +3,11 @@ import urllib.request
 
 import spacy
 
-# Lade spaCy-Modelle
+# Lpad spaCy-models
 nlp_en = spacy.load('en_core_web_sm')
 nlp_tr = spacy.load('tr_core_news_md')
 
-# Verarbeite die Texte
+# Process manually chosen excerpts from the texts
 doc_en = nlp_en("1.  The case originated in an application (no. 11236/09) against the Republic of Turkey lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (“the Convention”) by a Turkish national, Mr Mehmet Aytunç Altay (“the applicant”), on 17 February 2006.")
 doc_tr = nlp_tr("1.  Davanın temelinde, Mehmet Aytunç Altay (“başvuran”) adlı bir Türk vatandaşı tarafından, İnsan Hakları ve Temel Özgürlüklerin Korunmasına ilişkin Sözleşme’nin (“Sözleşme”) 34. maddesine uygun olarak, 17 Şubat 2006 tarihinde, Türkiye Cumhuriyeti Devleti aleyhine Mahkemeye yapılmış olan başvuru (no. 11236/09) bulunmaktadır.")
 
