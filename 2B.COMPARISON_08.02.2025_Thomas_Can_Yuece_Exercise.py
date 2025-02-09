@@ -3,7 +3,7 @@ import urllib.request
 
 import spacy
 
-# Lpad spaCy-models
+# Lpad spaCy language models
 nlp_en = spacy.load('en_core_web_sm')
 nlp_tr = spacy.load('tr_core_news_md')
 
